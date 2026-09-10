@@ -34,7 +34,8 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+  run: pnpm install --no-frozen-lockfile
+
 
       - name: Build ARSIL BANK
         working-directory: artifacts/arsil-bank
